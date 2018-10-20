@@ -169,6 +169,9 @@ if &term =~# '^screen'
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 endif
 
+" Conda
+Plug 'cjrh/vim-conda'
+
 " fzf
 Plug '~/.fzf'
 
@@ -1103,6 +1106,16 @@ augroup end
 " endif
 
 " }}}
+"
+" Deoplete
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
 
 " Snippets                       {{{
 " --> provide snippet extensions when editing code
@@ -1750,6 +1763,8 @@ let g:airline_section_y = "%{airline#util#wrap(airline#parts#ffenc() . ' ' . g:u
 
 " --> enable powerline symbols in status line
 let g:airline_powerline_fonts = 1
+let g:Powerline_symbols = 'fancy'
+set fillchars+=stl:\ ,stlnc:\
 
 " --> set a default status line theme
 if !exists('g:airline_theme') | let g:airline_theme = 'gruvbox' | endif
@@ -1857,8 +1872,8 @@ endif
 " }}}
 
 call plug#end()
-colorscheme nova
-let g:airline_theme='nova'
+colorscheme gruvbox
+let g:airline_theme = 'gruvbox'
 " --> Personalize: allows customizations via a local configuration
 if filereadable(expand("~/.vimrc.local")) | source ~/.vimrc.local | endif
 
