@@ -1,8 +1,14 @@
 {
+  "suggest.timeout": 8000,
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "python.jediPath": "~/.pyenv/versions/3.8.0/lib/python3.8/site-packages",
   "python.linting.flake8Path": "~/.pyenv/shims/flake8",
-  "tsserver.npm": "~/.nvm/versions/node/v12.13.1/bin/npm"
+  "tsserver.npm": "~/.nvm/versions/node/v12.13.1/bin/npm",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "vue-html": "html"
+  }
 }
