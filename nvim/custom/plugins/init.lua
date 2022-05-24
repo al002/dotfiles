@@ -38,4 +38,8 @@ return {
 
    ["junegunn/fzf"] = {
    },
+
+   ["ellisonleao/glow.nvim"] = {
+     branch = "main"
+   },
 }

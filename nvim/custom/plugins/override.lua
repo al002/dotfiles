@@ -60,4 +60,12 @@ M.gitsigns = {
   current_line_blame = true,
 }
 
+M.statusline = {
+  right = {
+    position = {
+      provider = "position",
+    },
+  },
+}
+
 return M

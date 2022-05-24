@@ -20,5 +20,11 @@ M.gitsigns = {
   },
 }
 
+M.glow = {
+  n = {
+    ["<leader>mp"] = { "<cmd> Glow <CR>", "preview markdown file" }
+  },
+}
+
 return M
 

@@ -11,3 +11,5 @@
 [https://github.com/hrsh7th/vscode-langservers-extracted](https://github.com/hrsh7th/vscode-langservers-extracted)
 
 [https://github.com/junegunn/fzf](https://github.com/junegunn/fzf)
+
+[https://github.com/charmbracelet/glow](https://github.com/charmbracelet/glow)
