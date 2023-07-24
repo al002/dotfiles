@@ -18,6 +18,9 @@ local sources = {
 
   -- cpp
   format.clang_format,
+
+  -- rust
+  format.rustfmt,
 }
 
 null_ls.setup {
