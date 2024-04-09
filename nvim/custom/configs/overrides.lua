@@ -17,6 +17,8 @@ M.treesitter = {
     "typescript",
     "rust",
     "elixir",
+    "heex",
+    "surface",
   },
   -- indent = {
   --   enable = true,
