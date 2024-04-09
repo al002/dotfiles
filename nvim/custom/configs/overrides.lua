@@ -16,6 +16,7 @@ M.treesitter = {
     "tsx",
     "typescript",
     "rust",
+    "elixir",
   },
   -- indent = {
   --   enable = true,
@@ -52,6 +53,9 @@ M.mason = {
     "shfmt",
     "shellcheck",
     "bash-language-server",
+
+    -- elixir
+    "elixir-ls"
   },
 }
 
