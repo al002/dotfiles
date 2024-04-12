@@ -18,6 +18,7 @@ M.treesitter = {
     "rust",
     "elixir",
     "heex",
+    "eex",
     "surface",
   },
   -- indent = {
@@ -57,7 +58,7 @@ M.mason = {
     "bash-language-server",
 
     -- elixir
-    "elixir-ls"
+    -- "elixir-ls"
   },
 }
 
