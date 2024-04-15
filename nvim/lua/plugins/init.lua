@@ -32,6 +32,8 @@ return {
         "deno",
         "json-lsp",
         "elixir-ls",
+        "gopls",
+        "sqls",
 
         -- rust
         "rust-analyzer",
@@ -68,6 +70,10 @@ return {
         "heex",
         "eex",
         "surface",
+        "go",
+        "gomod",
+        "gosum",
+        "sql",
 
         -- config file
         "toml",

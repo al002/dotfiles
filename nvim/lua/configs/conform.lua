@@ -8,6 +8,7 @@ local options = {
     typescript= { { "prettierd", "prettier" } },
     typescriptreact = { { "prettierd", "prettier" } },
     go = { "goimports", "gofmt" },
+    -- sql = { "sqlfluff" }
   },
 
   -- format_on_save = {
