@@ -23,6 +23,8 @@ local servers = {
       "/Users/al/.local/share/nvim/mason/packages/elixir-ls/language_server.sh",
     },
   },
+  gopls = {},
+  solidity_ls = {},
 }
 
 for name, opts in pairs(servers) do

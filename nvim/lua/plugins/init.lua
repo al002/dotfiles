@@ -38,6 +38,9 @@ return {
         -- rust
         "rust-analyzer",
 
+        -- web3
+        "vscode-solidity-server",
+
         -- c/cpp stuff
         "clangd",
         "clang-format",
