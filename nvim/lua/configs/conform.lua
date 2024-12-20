@@ -1,14 +1,18 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    css = { { "prettierd", "prettier" } },
-    html = { { "prettierd", "prettier" } },
-    javascript = { { "prettierd", "prettier" } },
-    javascriptreact = { { "prettierd", "prettier" } },
-    typescript= { { "prettierd", "prettier" } },
-    typescriptreact = { { "prettierd", "prettier" } },
+    css = { "prettierd", "prettier" },
+    html = { "prettierd", "prettier" },
+    javascript = { "prettierd", "prettier" },
+    javascriptreact = { "prettierd", "prettier" },
+    typescript = { "prettierd", "prettier" },
+    typescriptreact = { "prettierd", "prettier" },
     go = { "goimports", "gofmt" },
+    python = { "isort", "black" },
     -- sql = { "sqlfluff" }
+
+    -- css = { "prettier" },
+    -- html = { "prettier" },
   },
 
   -- format_on_save = {
@@ -18,4 +22,4 @@ local options = {
   -- },
 }
 
-require("conform").setup(options)
+return options
