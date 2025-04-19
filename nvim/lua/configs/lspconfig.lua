@@ -58,6 +58,9 @@ local servers = {
       },
     },
   },
+  csharp_ls = {
+    AutomaticWorkspaceInit = true,
+  },
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
@@ -68,6 +71,8 @@ for name, opts in pairs(servers) do
 
   require("lspconfig")[name].setup(opts)
 end
+
+require("csharpls_extended").buf_read_cmd_bind()
 
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {

@@ -8,11 +8,20 @@ local options = {
     typescript = { "prettierd", "prettier" },
     typescriptreact = { "prettierd", "prettier" },
     go = { "goimports", "gofmt" },
-    python = { "isort", "black" },
+    python = { "ruff_format", "ruff_fix" },
+    cs = { "csharpier" },
     -- sql = { "sqlfluff" }
 
     -- css = { "prettier" },
     -- html = { "prettier" },
+  },
+
+  formatters = {
+    csharpier = {
+      command = "dotnet-csharpier",
+      args = { "--write-stdout" },
+      stdin = true,
+    },
   },
 
   -- format_on_save = {
