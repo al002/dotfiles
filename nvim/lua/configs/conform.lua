@@ -10,6 +10,10 @@ local options = {
     go = { "goimports", "gofmt" },
     python = { "ruff_format", "ruff_fix" },
     cs = { "csharpier" },
+    elixir = { "mix" },
+    eelixir = { "mix" },
+    hex = { "mix" },
+    surface = { "mix" }
     -- sql = { "sqlfluff" }
 
     -- css = { "prettier" },

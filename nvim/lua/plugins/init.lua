@@ -30,6 +30,7 @@ return {
         "deno",
         "json-lsp",
         "expert",
+        "elp",
         "gopls",
         "sqls",
         "csharp-language-server",
@@ -42,6 +43,7 @@ return {
 
         -- c/cpp stuff
         "clangd",
+        "zls",
 
         -- shell
         "shfmt",
@@ -70,6 +72,7 @@ return {
         "elixir",
         "heex",
         "eex",
+        "erlang",
         "surface",
         "go",
         "gomod",
@@ -86,6 +89,7 @@ return {
         "c",
         "bash",
         "rust",
+        "zig",
       },
     },
   },
