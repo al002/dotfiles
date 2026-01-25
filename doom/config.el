@@ -84,7 +84,7 @@
         :nm "gO" #'dired-display-file))
 
 (after! org
-  ;; Shift+Meta+RET -> insert new subheading
+  ;; Ctrl+Super+RET -> insert new subheading
   (define-key org-mode-map (kbd "C-s-<return>") #'org-insert-subheading)
   )
 
