@@ -95,3 +95,16 @@
    'org-babel-load-languages
    '((emacs-lisp . t)
      (C . t))))
+
+(setq select-enable-clipboard t)
+(setq select-enable-primary t)
+
+(defun my/transparent-tty-background (&optional frame)
+  "Set the background to transparent (unspecified) in TTY frames."
+  (unless (display-graphic-p frame)
+    (set-face-background 'default "unspecified" frame)
+    (when (featurep 'solaire-mode)
+      (set-face-background 'solaire-default-face "unspecified" frame))))
+
+(my/transparent-tty-background)
+(add-hook 'after-make-frame-functions #'my/transparent-tty-background)
